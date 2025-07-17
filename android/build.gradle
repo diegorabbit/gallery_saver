@@ -2,7 +2,9 @@ group 'carnegietechnologies.gallery_saver'
 version '1.0-SNAPSHOT'
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(8))
+    }
 }
 
 buildscript {
